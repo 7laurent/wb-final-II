@@ -26,7 +26,7 @@ def unemployment():
     conn = sqlite3.connect("data/unemployment.db")
     cursor = conn.cursor()
 
-    cursor.execute("SELECT * FROM unemployment LIMIT 10")
+    cursor.execute("SELECT * FROM unemployment")
 
     data = cursor.fetchall()
 
